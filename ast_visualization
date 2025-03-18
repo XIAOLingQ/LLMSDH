@@ -1,0 +1,84 @@
+digraph AST {
+	rankdir=TB
+	"537d8bbb-daca-4ba9-a28a-215e4bf39430" [label=Module]
+	"e4787e52-c398-4a61-8576-1ec3cd6cc9d6" [label="FunctionDef: factorial"]
+	"537d8bbb-daca-4ba9-a28a-215e4bf39430" -> "e4787e52-c398-4a61-8576-1ec3cd6cc9d6"
+	"bcc664d8-d3d3-482f-8033-d5d5a7925170" [label=arguments]
+	"e4787e52-c398-4a61-8576-1ec3cd6cc9d6" -> "bcc664d8-d3d3-482f-8033-d5d5a7925170"
+	"8c340204-f1fb-470e-9a44-7aa4de1a5d75" [label=arg]
+	"bcc664d8-d3d3-482f-8033-d5d5a7925170" -> "8c340204-f1fb-470e-9a44-7aa4de1a5d75"
+	"65d5ee32-2cc8-44ae-a381-0c599a2f78cb" [label=If]
+	"e4787e52-c398-4a61-8576-1ec3cd6cc9d6" -> "65d5ee32-2cc8-44ae-a381-0c599a2f78cb"
+	"5fed1607-7ff9-40c9-86c1-832923ce649a" [label="Compare: LtE"]
+	"65d5ee32-2cc8-44ae-a381-0c599a2f78cb" -> "5fed1607-7ff9-40c9-86c1-832923ce649a"
+	"1a482aad-909b-449f-8194-886fa83d482a" [label="Name: n"]
+	"5fed1607-7ff9-40c9-86c1-832923ce649a" -> "1a482aad-909b-449f-8194-886fa83d482a"
+	"f9df7f7b-0eaa-4368-ba7c-5c5cce4510e1" [label=Load]
+	"1a482aad-909b-449f-8194-886fa83d482a" -> "f9df7f7b-0eaa-4368-ba7c-5c5cce4510e1"
+	"18cdb5ed-ce38-4779-a096-520cdb9b25a2" [label=LtE]
+	"5fed1607-7ff9-40c9-86c1-832923ce649a" -> "18cdb5ed-ce38-4779-a096-520cdb9b25a2"
+	"0b106754-c013-49ab-bb66-87b8f2de9d1a" [label="Constant: 1"]
+	"5fed1607-7ff9-40c9-86c1-832923ce649a" -> "0b106754-c013-49ab-bb66-87b8f2de9d1a"
+	"7b93c5d4-2989-4f2c-a887-9ebb2c8e9e76" [label=Return]
+	"65d5ee32-2cc8-44ae-a381-0c599a2f78cb" -> "7b93c5d4-2989-4f2c-a887-9ebb2c8e9e76"
+	"2189ca5c-bc92-4949-ab35-1d5ee2366894" [label="Constant: 1"]
+	"7b93c5d4-2989-4f2c-a887-9ebb2c8e9e76" -> "2189ca5c-bc92-4949-ab35-1d5ee2366894"
+	"5fb78b0b-505f-4116-8e09-2eb089c66185" [label=Return]
+	"65d5ee32-2cc8-44ae-a381-0c599a2f78cb" -> "5fb78b0b-505f-4116-8e09-2eb089c66185"
+	"7ed959fe-0839-409d-b3fc-0e432903be39" [label="BinOp: Mult"]
+	"5fb78b0b-505f-4116-8e09-2eb089c66185" -> "7ed959fe-0839-409d-b3fc-0e432903be39"
+	"550e6a36-d0ea-4854-9be9-f8d1a03363d2" [label="Name: n"]
+	"7ed959fe-0839-409d-b3fc-0e432903be39" -> "550e6a36-d0ea-4854-9be9-f8d1a03363d2"
+	"9ef96ec3-a6e6-426e-8962-8037e1eddcad" [label=Load]
+	"550e6a36-d0ea-4854-9be9-f8d1a03363d2" -> "9ef96ec3-a6e6-426e-8962-8037e1eddcad"
+	"dd0d8772-8b3b-46db-909e-d986f8324349" [label=Mult]
+	"7ed959fe-0839-409d-b3fc-0e432903be39" -> "dd0d8772-8b3b-46db-909e-d986f8324349"
+	"6fc57764-ec94-4e7e-825c-9d468cca2540" [label=Call]
+	"7ed959fe-0839-409d-b3fc-0e432903be39" -> "6fc57764-ec94-4e7e-825c-9d468cca2540"
+	"f055ac74-d206-440f-b707-09a040703f6f" [label="Name: factorial"]
+	"6fc57764-ec94-4e7e-825c-9d468cca2540" -> "f055ac74-d206-440f-b707-09a040703f6f"
+	"fc332c3c-83b7-4722-a3be-209c9eb63ca2" [label=Load]
+	"f055ac74-d206-440f-b707-09a040703f6f" -> "fc332c3c-83b7-4722-a3be-209c9eb63ca2"
+	"3ea91462-4b73-4705-a518-d07e91d95993" [label="BinOp: Sub"]
+	"6fc57764-ec94-4e7e-825c-9d468cca2540" -> "3ea91462-4b73-4705-a518-d07e91d95993"
+	"389413a1-027b-43ae-b1c5-f985ff8d5db2" [label="Name: n"]
+	"3ea91462-4b73-4705-a518-d07e91d95993" -> "389413a1-027b-43ae-b1c5-f985ff8d5db2"
+	"8c876fa7-c01b-4164-8f32-0014504b4ef2" [label=Load]
+	"389413a1-027b-43ae-b1c5-f985ff8d5db2" -> "8c876fa7-c01b-4164-8f32-0014504b4ef2"
+	"a54d0dcc-fe57-446b-a5b5-ade45f398cf7" [label=Sub]
+	"3ea91462-4b73-4705-a518-d07e91d95993" -> "a54d0dcc-fe57-446b-a5b5-ade45f398cf7"
+	"1512b7d2-7e2a-4dc8-b448-93c12d5e5452" [label="Constant: 1"]
+	"3ea91462-4b73-4705-a518-d07e91d95993" -> "1512b7d2-7e2a-4dc8-b448-93c12d5e5452"
+	"5dfbb54f-07d9-41d8-bf0a-319051685f6c" [label=Assign]
+	"537d8bbb-daca-4ba9-a28a-215e4bf39430" -> "5dfbb54f-07d9-41d8-bf0a-319051685f6c"
+	"9e63d6e1-af32-4d36-b457-9dff5e52230f" [label="Name: result"]
+	"5dfbb54f-07d9-41d8-bf0a-319051685f6c" -> "9e63d6e1-af32-4d36-b457-9dff5e52230f"
+	"551de55b-2147-431e-a470-b23ed7b1b486" [label=Store]
+	"9e63d6e1-af32-4d36-b457-9dff5e52230f" -> "551de55b-2147-431e-a470-b23ed7b1b486"
+	"2ca4abb1-a7f7-41ec-8dcc-da394e775c81" [label=Call]
+	"5dfbb54f-07d9-41d8-bf0a-319051685f6c" -> "2ca4abb1-a7f7-41ec-8dcc-da394e775c81"
+	"5a570862-d9c0-4bb8-ad4f-eff573e278bc" [label="Name: factorial"]
+	"2ca4abb1-a7f7-41ec-8dcc-da394e775c81" -> "5a570862-d9c0-4bb8-ad4f-eff573e278bc"
+	"a38a807b-bda8-408e-b000-97d20567bd13" [label=Load]
+	"5a570862-d9c0-4bb8-ad4f-eff573e278bc" -> "a38a807b-bda8-408e-b000-97d20567bd13"
+	"f48992e6-317a-4c17-872e-1ad48d35eb1a" [label="Constant: 5"]
+	"2ca4abb1-a7f7-41ec-8dcc-da394e775c81" -> "f48992e6-317a-4c17-872e-1ad48d35eb1a"
+	"71f6de21-9caf-47b5-8252-3740e1ed810e" [label=Expr]
+	"537d8bbb-daca-4ba9-a28a-215e4bf39430" -> "71f6de21-9caf-47b5-8252-3740e1ed810e"
+	"54fcc795-e703-4973-9db7-358da02abcea" [label=Call]
+	"71f6de21-9caf-47b5-8252-3740e1ed810e" -> "54fcc795-e703-4973-9db7-358da02abcea"
+	"7d0048e1-4bd5-451f-bd19-d6ecf7646a1d" [label="Name: print"]
+	"54fcc795-e703-4973-9db7-358da02abcea" -> "7d0048e1-4bd5-451f-bd19-d6ecf7646a1d"
+	"c426d5a4-aa1a-4198-88df-134237632b67" [label=Load]
+	"7d0048e1-4bd5-451f-bd19-d6ecf7646a1d" -> "c426d5a4-aa1a-4198-88df-134237632b67"
+	"04435158-87a4-4816-b5f1-619e445369e9" [label=JoinedStr]
+	"54fcc795-e703-4973-9db7-358da02abcea" -> "04435158-87a4-4816-b5f1-619e445369e9"
+	"36e9cead-e4f4-45bf-9115-d05724c211f0" [label="Constant: The factorial of 5 is "]
+	"04435158-87a4-4816-b5f1-619e445369e9" -> "36e9cead-e4f4-45bf-9115-d05724c211f0"
+	"fb58b9e9-ce8b-4309-9c2f-b1677ae9dd81" [label=FormattedValue]
+	"04435158-87a4-4816-b5f1-619e445369e9" -> "fb58b9e9-ce8b-4309-9c2f-b1677ae9dd81"
+	"bab889ba-a8f7-4acc-9193-a9e2962e3c96" [label="Name: result"]
+	"fb58b9e9-ce8b-4309-9c2f-b1677ae9dd81" -> "bab889ba-a8f7-4acc-9193-a9e2962e3c96"
+	"3341bca9-2067-4126-94c6-311abf0b66e2" [label=Load]
+	"bab889ba-a8f7-4acc-9193-a9e2962e3c96" -> "3341bca9-2067-4126-94c6-311abf0b66e2"
+}

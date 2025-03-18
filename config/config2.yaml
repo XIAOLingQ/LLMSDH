@@ -1,0 +1,4 @@
+llm:
+  api_type: "zhipuai"
+  api_key: "a32529c7a9ec4c569f94610343daff6e.jTWpyMwM8DGIkAmz"
+  model: "glm-4-plus"
