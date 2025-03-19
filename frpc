@@ -1,0 +1,6 @@
+cd /usr/local/bin
+wget -O frpc https://nya.globalslb.net/natfrp/client/frpc/0.51.0-sakura-9.3/frpc_linux_amd64
+chmod 755 frpc
+ls -ls frpc
+md5sum frpc
+fprc -f tdx7shn1d5bhq8oo0ryx2wyun67yrkb4:{id}

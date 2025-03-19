@@ -1,0 +1,78 @@
+[common]
+user = tdx7shn1d5bhq8oo0ryx2wyun67yrkb4
+
+sakura_mode = true
+login_fail_exit = false
+
+server_addr = frp-fit.com
+server_port = 8088
+
+[SPL_1]
+# id = 20156442
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8501
+remote_port = 20583
+
+[SPL_2]
+# id = 20156446
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8501
+remote_port = 59740
+
+[SPL_3]
+# id = 20156448
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8501
+remote_port = 14100
+
+[SPL_4]
+# id = 20156452
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8501
+remote_port = 49827
+
+[SPL_5]
+# id = 20156454
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8501
+remote_port = 53746
+
+[SPL_6]
+# id = 20156457
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8501
+remote_port = 34014
+
+[SPL_7]
+# id = 20156460
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8501
+remote_port = 63657
+
+[SPL_8]
+# id = 20156465
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8501
+remote_port = 48668
+
+[SPL_9]
+# id = 20156469
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8501
+remote_port = 57914
+
+[SPL_10]
+# id = 20156472
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8501
+remote_port = 33298

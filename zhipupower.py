@@ -60,7 +60,19 @@ def delete_zip_file(file_path):
     if os.path.exists(file_path):
         os.remove(file_path)
         st.session_state.zip_file_path = None  # 清除状态中的文件路径
-        st.success("The ZIP file has been deleted.")
+        st.success("ZIP 文件已删除。")
+    
+    
+
+    workspace_dir = "workspace"
+    current_dir = os.getcwd()
+    workspace_path = os.path.join(current_dir, workspace_dir)
+
+    if os.path.exists(workspace_path) and os.path.isdir(workspace_path):
+        shutil.rmtree(workspace_path)
+        print(f"目录 '{workspace_dir}' 已删除。")
+    else:
+        print(f"目录 '{workspace_dir}' 不存在。")
 
 
 
