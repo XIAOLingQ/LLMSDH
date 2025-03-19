@@ -3,4 +3,4 @@ wget -O frpc https://nya.globalslb.net/natfrp/client/frpc/0.51.0-sakura-9.3/frpc
 chmod 755 frpc
 ls -ls frpc
 md5sum frpc
-fprc -f tdx7shn1d5bhq8oo0ryx2wyun67yrkb4:{id}
+frpc -f tdx7shn1d5bhq8oo0ryx2wyun67yrkb4:{id}
